@@ -1,3 +1,62 @@
+# 📱 WhatsApp AI Agent
+
+**WhatsApp AI Agent** is a custom-built solution that connects your WhatsApp account to powerful AI conversations using **n8n**, Docker, and OpenRouter AI.
+
+---
+
+## 🚀 What It Does
+
+✅ Connects to WhatsApp to send and receive messages automatically  
+✅ Handles:
+- Text messages
+- Voice notes (transcribed and answered)
+- Images and PDF documents (analyzed and summarized)
+
+✅ Uses **OpenRouter AI** for intelligent, context-aware replies  
+✅ Remembers conversations for each user to maintain context  
+✅ Allows you to build custom workflows for:
+- Answering FAQs
+- Qualifying leads
+- Scheduling meetings
+- Sending dynamic business info
+
+---
+
+## ⚙️ How It Works
+
+1. WhatsApp messages are received in **n8n** via WhatsApp integration.
+2. Messages are routed depending on type (text, audio, images, PDFs).
+3. Content is sent to **OpenRouter AI** for smart replies.
+4. Replies are sent back automatically to the user on WhatsApp.
+5. All runs smoothly inside Docker containers for easy deployment.
+
+---
+
+## 💻 How to Get Started
+
+```bash
+git clone https://github.com/sammakwana/WhatsApp-AI-Agent.git
+cd WhatsApp-AI-Agent
+
+# Add your environment variables (.env file)
+
+docker-compose up -d
+```
+
+- Open n8n in your browser.
+- Scan the WhatsApp QR code.
+- Start chatting and watch the AI respond!
+
+---
+
+
+## 🔗 Links
+
+- **GitHub Repository:** [WhatsApp-AI-Agent](https://github.com/sammakwana/WhatsApp-AI-Agent)
+
+---
+
+
 # Build Your First AI Agent — Step-by-Step Guide
 
 ### 1️⃣ Install Docker
@@ -110,3 +169,5 @@ curl -X POST http://localhost:3000/simulate-self \
 ---
 
 ✅ Done! Your AI agent is now ready for action.
+
+**Created with ❤️ by Samir Makwana**
